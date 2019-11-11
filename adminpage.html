@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/formcontrol.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">HELLO ADMIN</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Admin <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#">Post Job Vaccancies</a></li>
+                            <li role="presentation"><a href="#">View Users</a></li>
+                            <li role="presentation"><a href="#">View Feedback</a></li>
+                            <li role="presentation"><a href="#">View Job Vaccancies</a></li>
+                            <li role="presentation"><a href="adminlogin.php">Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center text-primary">Post Job Vaccancies</h2></div>
+    </div>
+    <form method="Post" action="adminpage.php">
+    <div class="form-group">
+        <input class="form-control" type="text" name="jobtitle" placeholder="Job Title" size="20"><?php echo $errjobtitle?></div>
+        <div class="form-group">
+        <textarea class="form-control input-lg" rows="5" cols="3" name="jobdescription" placeholder="Enter Job Description"></textarea><?php echo $errjobdesc?></div>
+        <div class="form-group">
+        <input class="form-control" type="text" name="now" placeholder="No of Workers"></div>
+        <div class="form-group">
+        <input class="form-control" type="text" name="age" placeholder="Age Range"></div>
+        <div class="form-group">
+        <input class="form-control" type="text" name="salary" placeholder="Salary"></div>
+        <div class="form-group">
+        <input class="form-control" type="text" name="contractperiod" placeholder="Contract Period"></div>
+        <div class="form-group">
+        <input class="form-control" type="text" name="workdays" placeholder="Working Days"></div>
+        <div class="form-group">
+        <input class="form-control" type="text" name="workhours" placeholder="Working Hours"></div>
+        <div class="form-group">
+        <input class="form-control" type="text" name="qualification" placeholder="Minimum Qualification"></div>
+        <div class="form-group">
+        <input class="form-control" type="text" name="country" placeholder="Country"></div>
+        <div class="form-group text-center">
+        <button class="btn btn-primary" type="submit" name="submit">Post Job</button></div>
+    </form>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

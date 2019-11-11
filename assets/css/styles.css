@@ -1,0 +1,46 @@
+h1{
+  background-color:rgb(33,85,33);
+}
+
+button.btn.btn-default{
+  border-radius:10px;
+}
+
+div.row{
+  background-color:rgb(33,85,33);
+  margin-left:15px;
+  margin-right:15px;
+  margin-top:10px;
+  margin-bottom:5px;
+}
+
+button.btn.btn-info{
+  margin:20px;
+}
+
+p.text-justify{
+}
+
+div.col-md-4{
+  height:500px;
+  background-color:#375a7f;
+  padding:5px;
+}
+
+div.col-sm-12{
+  background:#375a7f;
+}
+
+.img-responsive{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+div#login.col-md-12{
+  background-image:url("../../assets/img/login background.jpg");
+}
+
+div.col-md-12{
+}
+
